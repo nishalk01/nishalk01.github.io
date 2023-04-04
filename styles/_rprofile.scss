@@ -1,0 +1,100 @@
+@mixin ProfileStyle{
+
+    @include xs{
+        padding-top: 0px;
+        min-height: max-content;
+        // height: max-content;
+    }
+
+    @include sm{
+        padding-top: 0px;
+        min-height: max-content;
+    }
+
+    @include md{
+        padding-top: 0px;
+        min-height: max-content;
+        // background-color: red;
+    }
+    @include lg{      
+        min-height: max-content;
+        // background-color: red;
+        height: 80vh;
+        // margin-bottom: 90px;
+    }
+
+    @include xl{
+        min-height: max-content;
+        height: 89vh;
+        // margin-bottom: 75px;
+        // background-color: red;
+    }
+
+    @include xxl{
+        min-height: max-content;
+        height: 85vh;
+        // padding-top: 90px;
+        padding-bottom: 150px;
+        align-items: center;
+    }
+}
+
+
+@mixin ImageStyle{
+    @include xs{
+        width: 100%;
+        margin-left: 0px;
+        height: 350px;
+    }
+
+    @include sm{
+        width: 80%;
+        margin-left: 0px;
+    }
+    @include lg{
+        width: 60%;
+    }
+}
+
+
+@mixin CommonProfileTextContent{
+    #SocialIcons{
+        justify-content: center;
+    }
+
+    #button{
+        display: flex;
+        justify-content: center;
+    }
+
+    h1{
+        text-align: center;
+        margin-top: 40px;
+    }
+    
+    p{
+        text-align: justify;
+        margin:  0;
+        
+    }
+
+}
+
+@mixin ProfileTextContent{
+
+  
+    
+    @include xs{
+        @include CommonProfileTextContent();
+        font-size:0.9em;
+       
+    }
+
+    @include sm{
+        @include CommonProfileTextContent();
+    }
+
+    @include md{
+        @include CommonProfileTextContent();
+    }
+}

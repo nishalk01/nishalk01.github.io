@@ -1,0 +1,102 @@
+@import "./rskill";
+
+
+#LangContainer {
+  @include flexLayout($justifyContent: center);
+  flex-wrap: wrap;
+  div {
+    font-weight: 600;
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px solid #abb0b5;
+    text-align: center;
+    color: black;
+    padding: 5px 15px;
+    // border-radius: 40px;
+    transition: background-color 0.2s ease-in;
+    cursor: pointer;
+    &:hover {
+      background-color: black;
+      color: white;
+    }
+  }
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+.tabcontent {
+  .img {
+    float: left;
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+  }
+}
+
+.active {
+  background-color: black;
+}
+
+
+    //     padding: 5px;
+    //     margin: 10px;
+    //     border-radius: 20px;
+    //     transition: all ease 0.3s;
+    //     border: 1px solid transparent;
+    //     &:hover {
+    //       border: 1px solid #b2b4b8;
+    //       box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    //         rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    //     }
+    //   }
+
+@mixin TabContentStyles {
+  @include flexLayout($direction:row ,$gap:50px,$justifyContent:center,$alignItem:center);
+  flex-flow: row wrap;
+  // background-color: yellow;
+  margin:  60px;
+  div{
+      // padding: 30px;
+      // background-color: red;
+      @include flexLayout($justifyContent: center,$direction:column,$alignItem:center,$gap:15px);
+           padding: 15px;
+      // margin: 10px;
+      border-radius: 10px;
+      transition: all ease 0.3s;
+      border: 1px solid transparent;
+      &:hover {
+        border: 1px solid #e2e5ec;
+        box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+      }
+      span{
+          font-weight: 500;
+      }
+    }
+  @include rTabContentStyles();
+}
+
+#js {
+
+@include TabContentStyles();
+// justify-content: flex-start
+  
+}
+
+#py{
+  @include TabContentStyles();
+}
+
+#cpp{
+  @include TabContentStyles();
+}
+
+#cs{
+  @include TabContentStyles();
+}
+#ui{
+  @include TabContentStyles();
+}
+
+#db{
+  @include TabContentStyles();
+}

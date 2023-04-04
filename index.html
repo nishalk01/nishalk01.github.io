@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./assets/nk.svg">
+    <title>Nishal - Portofolio</title>
+
+    <link rel="stylesheet" href="./styles/bootstrap.min.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <!-- <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+        integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+        crossorigin="anonymous"></script> -->
+    <script defer src="./navbar.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <nav id="mobNav">
+            <div>
+                <img src="./assets/nk.svg" width="50px" height="50px" />
+            </div>
+
+            <a role="button" id="mobNavToggle">
+                <i class="bi bi-list" style="text-align: center;"></i>
+            </a>
+
+
+        </nav>
+        <div id="Splash">
+            <div id="mobNavbOptions">
+                <a href="#Profile">Home</a>
+                <a href="#Education">Edu & Experience</a>
+                <a href="#Skills">Skills</a>
+                <a href="#Project">Project</a>
+                <a href="#ContactMe">Contact me</a>
+            </div>
+
+        </div>
+
+
+        <nav id="desktopNav">
+            <div>
+                <img src="./assets/nk.svg" width="70px" height="70px" />
+            </div>
+
+            <div id="navOptions">
+                <a href="#Profile">Home</a>
+                <a href="#Education">Edu & Experience</a>
+                <a href="#Skills">Skills</a>
+                <a href="#Project">Project</a>
+                <a href="#ContactMe">Contact me</a>
+            </div>
+        </nav>
+
+
+    </header>
+
+
+    <!-- Home -->
+    <section class="container" id="Profile">
+        <div class="row py-5">
+            <div class="col-lg-6 col-sm-12" id="imgCenter">
+                <img class="img-fluid animateOnScroll" data-delay="1.5s" data-animation="fade-in-bottom"
+                    src="./dist/images/pexels-vojtech-okenka-399772.webp" alt="" width="50%" height="70%">
+            </div>
+            <div id="profileTextContent" class="col-lg-6 col-sm-12 animateOnScroll" data-delay="1.5s"
+                data-animation="fade-in-bottom">
+                <h1>Hi I'm Nishal</h1>
+                <!-- <br /> -->
+                <p> An engineering graduate passionate about solving real-world challenges through technology, I
+                    possess a strong interest in developing innovative mobile and web applications. I am currently
+                    seeking a role that will allow me to continuously learn new skills and apply my existing ones to
+                    their fullest potential, both for my own growth and for the benefit of the organization.</p>
+                <div id="SocialIcons">
+                    <a class="bi bi-github" href="https://github.com/nishalk01" target="_blank"></a>
+                    <a class="bi bi-instagram" target="_blank"></a>
+                    <a class="bi bi-linkedin" href="https://www.linkedin.com/in/nishal-k-8a428b219" target="_blank"></a>
+                </div>
+                <div id="button">
+                    <a href="./assets/Nishalk.pdf" class="btn btn-outline-dark" target="_blank">Download Resume</a>
+                    <!-- <button type="button" class="btn btn-outline-dark" >Download Resume</button> -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Home -->
+    <section id="Education" class="container-fluid">
+        <h3 style="text-align: center">
+            <span>Education & Experience</span>
+        </h3>
+
+        <!-- <ul style="list-style-type: none;">
+            <li><strong>BE</strong> in Electronics and Communication Engineering<br />
+               Studied at Mangalore Institute of Technology & Engineering <br />
+               <span style="float: left;">CGPA - 7.6</span> <i style="color: gray;font-weight: 400;float: right;">2017 - 2021</i>
+               <br/>
+               <div class="divider"></div>
+            </li>
+            <li><strong>BE</strong> in Electronics and Communication Engineering<br />
+                Studied at Mangalore Institute of Technology & Engineering <br />
+                 <i style="color: gray;font-weight: 400;float: right;">2017 - 2021</li>
+            <li></li>
+        </ul> -->
+        <ul class="timeline">
+            <li class="animateOnScroll" data-delay="1.6s"><strong>Working as </strong> Technical Support Engineer<br />
+                at Invenger Technologies<br />
+                <i style="color: gray;font-weight: 400;float: right;">2021
+                    - Present</i>
+                <br />
+            </li>
+
+            <li class="animateOnScroll"><strong>BE</strong> in Electronics and Communication Engineering<br />
+                Studied at Mangalore Institute of Technology & Engineering <br />
+                <span style="float: left;">CGPA - 7.6</span> <i style="color: gray;font-weight: 400;float: right;">2017
+                    - 2021</i>
+                <br />
+            </li>
+            <li class="animateOnScroll" data-delay="1.2s"><strong>Senior Secondary(12th)</strong> <br />
+                Studied at S.D.P.T PU College, Kateel <br />
+                <span style="float: left;">Percentage - 83%</span> <i
+                    style="color: gray;font-weight: 400;float: right;">2016
+                    - 2017</i>
+                <br />
+            </li>
+            <li class="animateOnScroll" data-delay="1.4s"><strong>Secondary School</strong> <br />
+                Studied at Maryvale High School <br />
+                <span style="float: left;">Percentage - 88%</span> <i
+                    style="color: gray;font-weight: 400;float: right;">2015
+                    - 2016</i>
+                <br />
+            </li>
+
+        </ul>
+    </section>
+
+    <!-- Skills section -->
+    <section class="container" id="Skills">
+        <!-- Python,JavaScript
+
+            Language: JavaScript, Python,C++,C# 
+        
+            Technology: FrontEnd Web Development - ReactJS, HTML,CSS, Bootstrap,TypeScript.
+                                
+                         Backend Web Development - Flask, Django, Express, MongoDB
+                         
+                         Mobile App Development - React Native, Android with kotlin
+                         
+                         Computer Vision - OpenCV, Matplotlib,Pillow
+                         
+                         Machine Learning - Tensorflow,Keras
+        -->
+        <h3 style="text-align: center;">Skills</h3>
+        <div id="LangContainer">
+            <div class="tablinks" id="defaultOpen" onclick="showTechnologies(event,`js`)"> JavaScript</div>
+            <div class="tablinks" onclick="showTechnologies(event,`py`)"> Python</div>
+            <div class="tablinks" onclick="showTechnologies(event,`cpp`)">C++</div>
+            <div class="tablinks" onclick="showTechnologies(event,`cs`)">C#</div>
+            <div class="tablinks" onclick="showTechnologies(event,`ui`)">UI</div>
+            <div class="tablinks" onclick="showTechnologies(event,`db`)">DB</div>
+        </div>
+
+        <div id="js" class="tabcontent container animateOnScroll" data-delay="1.2s" data-animation="FadeIn">
+            <div>
+                <img src="./assets/skills/reactJS.svg" width="100px" height="100px" alt="">
+                <span>ReactJS</span>
+            </div>
+
+            <div>
+                <img src="./assets/skills/reactNative.svg" width="100px" height="100px" alt="">
+                <span>ReactNative</span>
+            </div>
+
+            <div>
+                <img src="./assets/skills/electron.svg" width="100px" height="100px" alt="">
+                <span>Electron</span>
+            </div>
+
+            <div>
+                <img src="./dist/images/express.webp" width="250px" height="100px" alt="">
+                <span>ExpressJS</span>
+            </div>
+
+
+
+
+
+            <div>
+                <img src="./dist/images/typescript.webp" width="100px" height="100px" style="border-radius: 10px
+                ;" alt="">
+                <span>TypeScript</span>
+            </div>
+
+            <div>
+                <img src="./assets/skills/Ionic.svg" width="200px" height="100px" alt="">
+                <span>Ionic</span>
+            </div>
+
+
+        </div>
+
+        <div id="py" class="tabcontent animateOnScroll" data-delay="0.7s" data-animation="FadeIn">
+
+            <div>
+                <img src="./assets/skills/Tensorflow.svg"  loading="lazy" width="100px" height="100px" alt="">
+                <span>Tensorflow</span>
+            </div>
+
+            <div>
+                <img src="./assets/skills/keras.svg"  loading="lazy" width="100px" height="100px" alt="" style="border-radius: 10px;">
+                <span>Keras</span>
+            </div>
+
+            <div>
+                <img src="./assets/skills/django.svg" loading="lazy" width="210px" height="80px" alt="">
+                <span>Django</span>
+            </div>
+
+            <div>
+                <img src="./assets/skills/flask.svg" loading="lazy" width="250px" height="100px" alt="">
+                <span>Flask</span>
+            </div>
+
+            <div>
+                <img src="./dist/images/Kivy.webp" loading="lazy" width="100px" height="100px" alt="">
+                <span>Kivy</span>
+            </div>
+
+            <div>
+                <img src="./assets/skills/OpenCV.svg" loading="lazy" width="100px" height="100px" alt="">
+                <span>OpenCV</span>
+            </div>
+
+        </div>
+
+        <div id="cpp" class="tabcontent">
+            <div>
+                <img src="./assets/skills/openGL.svg" loading="lazy" width="150px" height="100px" alt="">
+                <span>OpenGL</span>
+            </div>
+
+            <div>
+                <img src="./dist/images/dearIMGUI.webp" loading="lazy" width="130px" height="100px" alt="">
+                <span>Dear IMGUI</span>
+            </div>
+
+        </div>
+
+        <div id="cs" class="tabcontent">
+            <div>
+                <img src="./assets/skills/Unity.svg" loading="lazy" width="150px" height="100px" alt="">
+                <span>Unity</span>
+            </div>
+        </div>
+
+        <div id="ui" class="tabcontent">
+            <div>
+                <img src="./assets/skills/html5.svg" loading="lazy" width="100px" height="100px" alt="">
+                <span>HTML</span>
+            </div>
+
+            <div>
+                <img src="./assets/skills/css3.svg" loading="lazy" width="100px" height="100px" alt="">
+                <span>CSS</span>
+            </div>
+        </div>
+
+        <div id="db" class="tabcontent">
+            <div>
+                <img src="./assets/skills/mongodb.svg" loading="lazy" height="100px" width="200px" alt="">
+                <span>MongoDB</span>
+            </div>
+
+            <div>
+                <img src="./dist/images/Mysql.png"  loading="lazy" width="150px" height="100px" alt="">
+                <span>MySQL</span>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Projects section -->
+    <section id="Project" class="container">
+        <h3 style="text-align: center;">Projects</h3>
+        <div class="row align-items-center justify-content-center animateOnScroll">
+
+            <div class="projectCard col-lg-3 col-sm-12 animateOnScroll" data-animation="FadeIn">
+                <h4>AmbSafe</h4>
+                <span>A Full stack website made to track real time Ambulance location in case of Emergency. Uses
+                    SocketIO for real time location sharing. Allows OTP login and User can report the location of
+                    emergency by sharing their current location, ambulance then can accept notification and send their
+                    live location to the user</span>
+                <br />
+                <a href="https://github.com/nishalk01/reAmbSafe">See project</a>
+            </div>
+
+            <div class="projectCard col-lg-3 col-sm-12">
+                <h4>FTPServer_app_using_kivy </h4>
+                <span>An python mobile app made with Kivy which has a ability to share files via FTP sever, user can
+                    host their device files which can be accessed via FTP client, user can also set password,userame and
+                    port they wish to serve their content </span>
+                <br />
+                <a href="https://github.com/nishalk01/FTPServer_app_using_kivy" target="_blank">See project</a>
+            </div>
+
+            <div class="projectCard col-lg-3 col-sm-12">
+                <h4>SimpleVideoPlayer</h4>
+                <span>Simple Video Player android Application that uses React-native video to display and control video
+                    media, has a neat UI with ability to select a folder and open video files present in it. Has a
+                    custom UI control for controlling media</span>
+                <br />
+                <a href="https://github.com/nishalk01/VideoPlayer" target="_blank">See project</a>
+            </div>
+
+            <div class="projectCard col-lg-3 col-sm-12">
+                <h4>Blog Website</h4>
+                <span>Full stack Blog website made with NextJS and EditorJS, User can make a blog easily using editorjs
+                    all the blog details will be stored in FireStore has a admin page for user to login acess their
+                    blogs</span>
+                <br />
+                <a href="https://nk-nishalk01.vercel.app/c4408b611239eeeae4bf12b84a7df89f" target="_blank">See
+                    project</a>
+            </div>
+
+            <div class="projectCard col-lg-3 col-sm-12">
+                <h4>GreenScreen Image2Picture</h4>
+                <span>A python script that takes in two image has input and combines them into single picture used for
+                    adding green screen image to a different background. Uses Opencv to read and manipulate the give
+                    images</span>
+                <br />
+                <a href="https://github.com/nishalk01/green_screen_image2picture_using_opencv" target="_blank">See
+                    project</a>
+            </div>
+
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- Contact Me Section -->
+    <section id="ContactMe">
+        <div class="container pt-2">
+            <h2 style="text-align: center">
+                <span>Contact Me</span>
+            </h2>
+
+            <div class="row">
+
+                <div class="col-lg-6" id="socialsSection">
+                    <div id="email">
+                        <div id="ContactHighlightText">
+                            Let's chat.<br />
+                            Tell me about your project.<br />
+                        </div>
+                        <div style="color: rgb(181, 181, 178);"> Lets create something together✨ </div>
+                        <br /><span style="font-weight: 300;">Email me at</span><br />
+                        <strong>nishal25121999@gmail.com</strong>
+                    </div>
+                    <br />
+                    <div id="socialIconGroup">
+                        <a class="bi bi-github" href="https://github.com/nishalk01" target="_blank"></a>
+                        <a class="bi bi-instagram" target="_blank"></a>
+                        <a class="bi bi-linkedin" href="https://www.linkedin.com/in/nishal-k-8a428b219" target="_blank"></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <form action="https://formcarry.com/s/BywEPAJNb" method="POST" accept-charset="UTF-8">
+                        <div class="mb-3">
+                            <label for="Email" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="Email" name="Email" required
+                                placeholder="Enter your Email" />
+                        </div>
+                        <div class="mb-3">
+                            <label for="body" class="form-label">Email Subject</label>
+                            <textarea class="form-control" id="body" rows="8" name="body" minlength="10"
+                                placeholder="Enter What you want to say"></textarea>
+                        </div>
+                        <button class="btn btn-outline-light w-500" type="submit" style="
+              border: 2px solid white;
+              border-radius: 30px;
+              padding: 10px 30px;
+              font-weight: 500;
+            ">
+                            SEND EMAIL
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+    </section>
+    <script src="./animateOnScroll.js"></script>
+    <script>
+        // document.getElementById
+        const showTechnologies = (e, language) => {
+            // console.log(language)
+
+            const tabContent = document.getElementsByClassName("tabcontent")
+            for (let index = 0; index < tabContent.length; index++) {
+                tabContent[index].style.display = "none";
+            }
+            const tablinks = document.getElementsByClassName("tablinks");
+            for (let index = 0; index < tablinks.length; index++) {
+                tablinks[index].className = tablinks[index].className.replace(" active", "");
+                tablinks[index].style.color = "black"
+
+
+            }
+            // console.log(document.getElementById(language))
+            document.getElementById(language).style.display = "flex"
+            document.getElementById(language).style = `animation:FadeIn 0.3s cubic-bezier(0.390, 0.575, 0.565, 1.000) ;`
+            e.currentTarget.className += " active"
+            e.currentTarget.style.color = "white"
+
+        }
+
+        // showTechnologies(language="js")
+        document.getElementById("defaultOpen").click(language = "js");
+    </script>
+
+</body>
+
+</html>

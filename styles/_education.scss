@@ -1,0 +1,8 @@
+#Education{
+    // margin: 70px 0px;
+
+    @include flexLayout($justifyContent:center,$alignItem:center,$direction:column);
+    h3{
+        margin-bottom: 40px;
+    }
+}

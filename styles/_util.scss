@@ -1,0 +1,20 @@
+@mixin removeDefaultAnchor {
+  a {
+    color: #0060b6;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: #00a0c6;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+
+@mixin flexLayout($direction:row,$justifyContent:flex-start,$alignItem:flex-start,$gap:0px) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: $alignItem;
+  justify-content: $justifyContent;
+  gap: $gap;
+}

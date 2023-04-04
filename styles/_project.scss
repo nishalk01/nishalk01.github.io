@@ -1,0 +1,23 @@
+#Project{
+  // height: 100%;
+  width: 100%;
+  // background-color: red;
+  padding-top: 100px;
+  @include xs{
+    padding-top: 50px;
+  }
+}
+
+.projectCard{
+    border: 1px solid #d4d9df;
+    padding: 20px;
+    padding-top: 30px;
+    margin: 10px;
+    border-radius: 15px;
+    transition: all ease 0.3s;
+    &:hover {
+        border: 1px solid #e2e5ec;
+        box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+      }
+
+}

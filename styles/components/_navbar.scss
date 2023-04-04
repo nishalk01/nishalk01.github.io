@@ -1,0 +1,92 @@
+nav{
+    @include flexLayout($direction:row,$alignItem:space-between,$justifyContent:space-between);
+
+    font-weight: 600;
+    padding: 10px;
+    #navOptions{
+        margin-top: 15px;
+    }
+    #navOptions>a{
+        color: black;
+        padding:10px 20px;
+        border-radius: 40px;
+        transition: background-color 0.2s ease-in;
+        &:hover{
+            background-color: black;
+            color: white;
+            
+        }
+    }
+   
+}
+
+@include xs{
+    nav{
+        padding: 5px;
+       
+    }
+    
+}
+
+.bi-list{
+    font-size: 34px;
+    cursor: pointer;
+}   
+
+
+$navbarBreakpoint:790px;
+
+@media only screen and (max-width: $navbarBreakpoint){
+    #desktopNav{
+        display: none;
+    }
+    
+}
+
+@media screen and (min-width: ($navbarBreakpoint + 1)) {
+    // #desktopNav{
+    //     display: none;
+    // }
+    #mobNav{
+        display: none;
+    }
+}
+
+#Splash{
+    transition: all ease-in-out 0.3s;
+    width: 100%;
+    height: 100vh;
+    background-color:black;
+    // visibility: hidden;
+    position: absolute;
+    // top: 0;
+    z-index: 3;
+    #mobNavbOptions{
+        width: 100%;
+        // height: 100%;
+        
+        @include removeDefaultAnchor();
+        visibility: collapse;
+
+        transition: visibility ease-in-out 0.1s;
+        a{
+            color: white;
+            font-size: 1.2em;
+            margin: 15px;
+            padding: 10px;
+            font-weight: 500;
+            border-radius: 10px;
+            text-transform: uppercase;
+            transition: background-color ease-in 0.2s;
+            &:hover{
+                background-color: rgba(74, 69, 69, 1);
+                color: white;
+            }
+        }
+        @include flexLayout($direction:column,$alignItem:center,$gap:10px);
+        margin-top: 50px;
+        
+    }
+}
+
+

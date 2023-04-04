@@ -1,0 +1,99 @@
+@import "./rprofile";
+
+@keyframes FadeInTop {
+  from {
+    transform: translateY(40px);
+    opacity: 0;
+    //  background-color: red;
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes FadeInImage {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+  
+}
+
+#Profile {
+  padding-top: 50px;
+
+  // padding-bottom: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  // align-items: center;
+  @include ProfileStyle();
+
+  img {
+    object-fit: cover;
+    border-radius: 15px;
+    height: 450px;
+    margin-left: -20px;
+    @include ImageStyle();
+    animation: FadeInImage 0.7s ease-in 0.1s;
+    // margin: 0 auto;
+  }
+  #imgCenter {
+    display: flex;
+    justify-content: center;
+    // margin-right: -40px;
+    // align-items: center;
+  }
+  #profileTextContent {
+    
+    // background-color: red;
+    // text-align: center;
+    h1{
+      // animation: FadeInTop 1s cubic-bezier(0.18, 0.89, 0.32, 1.28) 0.2s;
+    }
+    p {
+      // animation: FadeInTop 1.2s cubic-bezier(0.18, 0.89, 0.32, 1.28) 0.1s;
+      text-align: start;
+      font-size: 1em;
+      font-weight: 500;
+      margin: 20px 0;
+      line-height: 1.6em;
+    }
+    #SocialIcons {
+
+      // animation: FadeInTop 1.4s cubic-bezier(0.18, 0.89, 0.32, 1.28) 0.2s;
+      @include flexLayout($gap: 20px);
+      font-size: 1.9em;
+      margin: 10px;
+      a {
+        cursor: pointer;
+        color: black;
+        text-decoration: none;
+      }
+      a:nth-of-type(2) {
+        cursor: pointer;
+        color: #e1306c;
+      }
+      a:nth-of-type(3) {
+        cursor: pointer;
+        color: #0077b5;
+      }
+    }
+
+    #button {
+      // animation: FadeInTop 1.4s cubic-bezier(0.18, 0.89, 0.32, 1.28) 0.2s;
+      a {
+        border-radius: 50px;
+        box-shadow: 1px;
+        font-size: 1em;
+        margin-top: 20px;
+      }
+    }
+
+    @include ProfileTextContent();
+  }
+}

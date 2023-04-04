@@ -1,0 +1,17 @@
+@import "./base";
+
+// utils
+@import "./util/breakpoint";
+@import "./util/animations";
+
+@import "./components/navbar";
+@import "./components/timeline";
+@import "./components/divider";
+
+@import "./profile";
+@import "./education";
+@import "./skills";
+@import "./project";
+@import "./contactme";
+
+
